@@ -1,49 +1,23 @@
 import styled from 'styled-components';
 
 const SNavBar = styled.div`
+  display: flex;
+  width: 100vw;
+
   .logo {
-    height: 10vh;
-    background-color: #cdc198;
     width: 10vw;
-    border: gray 1px solid;
+    background-color: #cdc198;
   }
 
   nav {
-    display: flex;
-
+    width: 90vw;
     ul {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       background-color: #cdc198;
-      align-items: center;
-      height: 90vh;
-      width: 10vw;
 
       a {
         text-decoration: inherit;
         color: inherit;
-      }
-    }
-
-    .actu-join {
-      display: flex;
-
-      li {
-        margin-left: 30px;
-      }
-
-      .actu {
-        margin-right: 150px;
-      }
-    }
-
-    .contact-slid {
-      display: flex;
-      margin-left: 180px;
-
-      .accordion {
-        display: none;
       }
     }
 
@@ -52,7 +26,7 @@ const SNavBar = styled.div`
       border-radius: 15px;
       width: 150px;
       padding: 10px;
-      color: ${(props) => props.text};
+      color: white;
       font-size: 1.5em;
       font-weight: 900;
       text-align: center;

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import SNavBar from './Style';
 
 function Header() {
@@ -7,20 +8,31 @@ function Header() {
         <div className="logo">Julien Delemarle</div>
         <nav>
           <ul>
-            <a href="/about">
-              <li className="about">à propos</li>
+            <a href="/Cv">
+              <li className="home">
+                <Link to="/">Home</Link>
+              </li>
             </a>
-            <a href="/skills">
-              <li className="skills">skills</li>
+            <a href="/Cv">
+              <li className="Cv">
+                <Link to="/Cv">CV</Link>
+              </li>
             </a>
-            <a href="/projets">
-              <li className="projets">projets</li>
+            <a href="/Projets">
+              <li className="Projets">
+                <Link to="/Projects">Projets</Link>
+              </li>
             </a>
-            <a href="/perso">
-              <li className="perso">perso</li>
+            <a href="/centres d'intérêt">
+              <li className="interest">
+                <Link to="/Interest">intérêts</Link>
+              </li>
             </a>
             <a href="/contact">
-              <li className="Contact">Contact</li>
+              <li className="Contact">
+                {' '}
+                <Link to="/Contact">Contact</Link>
+              </li>
             </a>
           </ul>
         </nav>
